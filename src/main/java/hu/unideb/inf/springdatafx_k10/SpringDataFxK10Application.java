@@ -31,4 +31,14 @@ public class SpringDataFxK10Application implements CommandLineRunner {
 
         personRepository.save(person);
     }
+
+    public void printDataBackend(){
+        System.out.println("Printing data...");
+    }
+
+    public Person getPerson(){
+        Person p = personRepository.findAll().getFirst();
+        personRepository.findDistinctFirstByDateOfBirth_Day();
+        return p;
+    }
 }

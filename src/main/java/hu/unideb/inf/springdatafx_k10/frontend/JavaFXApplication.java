@@ -14,4 +14,5 @@ public class JavaFXApplication extends Application {
         stage.setScene(new Scene(root));
         stage.show();
     }
+
 }
